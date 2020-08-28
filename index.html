@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        var queryUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=ReOYhGwk4YwRe4SldAJHzdDvrnckL86A"
+
+        $.ajax({
+            url: queryUrl,
+            method: "GET"
+        }).then(function (response) {
+            console.log(response);
+        });
+        response();
+    </script>
+</body>
+
+</html>
